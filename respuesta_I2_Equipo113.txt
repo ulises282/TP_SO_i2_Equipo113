@@ -1,0 +1,41 @@
+Franco Vivas 
+Gian Franzoso
+Gomez Alejandro
+
+a)Se puede usar el comando fecth para descargar contenido de un repositorio remoto
+
+b)Si, usando el comando fetch.
+
+c) Si, mediante un git pull del repositorio de ALFA, GAMMA puede actualizar su repositorio.
+
+
+d) No, no se pierden los cambios realizados en tu propio repositorio al realizar el fork
+
+e)Comando utilizados por Alfa--> Nicolas Gonzalez
+
+-git clone https://github.com/ulises282/TP_SO_i2_Equipo113.git
+
+-cd TP_SO_i2_103
+
+-git init 
+
+-git add fork.txt (el archivo que fue modificado)
+
+-git commit -m "mensaje(opcional)"
+
+-git branch -M main
+
+-git remote add origin https://github.com/ulises282/TP_SO_i2_Equipo113.git
+
+-git push
+
+
+Para actualizar el repositorio original al forkeado
+
+- git remote add upstream https://github.com/ulises282/TP_SO_i2_Equipo113.git
+
+- git fetch upstream
+
+-git rebase upstream/main
+
+-git push -f origin main
